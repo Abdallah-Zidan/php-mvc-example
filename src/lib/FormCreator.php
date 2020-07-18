@@ -30,7 +30,6 @@ class FormCreator
         }
     }
     public static function makeForm($formOptions=null){
-        $form = new Form($formOptions);
-        return $form;
+        return new Form($formOptions);
     }
 }

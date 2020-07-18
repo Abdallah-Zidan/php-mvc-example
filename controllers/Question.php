@@ -36,8 +36,7 @@ class Question
 
     private function getChoices(){
         $choiceM = new models\Choice();
-        $choices = $choiceM->listChoices($this->page);
-        return $choices;
+        return $choiceM->listChoices($this->page);
     }
 
     private function renderView(){
